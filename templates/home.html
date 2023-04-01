@@ -1,0 +1,296 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <!-- Home Banner Section -->
+    <section id="home-banner">
+        <div class="container">
+
+
+            <div class="row align-items-center">
+                <img src="{% static 'img/LL-Logo.png' %}" alt="Lagan Lutherie School" class="img-fluid">
+                <div class="text-justify text-center col my-5 p-5">
+                    <h1>Welcome to Lagan Lutherie School</h1>
+                    <br>
+                    <h5>Learn to build your own custom stringed instrument under the guidance of experienced luthiers.</h5>
+                    <a href="#courses" class="btn btn-primary">View Our Courses</a>
+                </div>
+
+            </div>
+            <div class="row align-items-center">
+                <div class="col">
+                    <img src="{% static 'img/IMG_6785.jpeg' %}" alt="Lagan Lutherie School" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {#    <section id="testomonial">#}
+    {#        <div class="container-fluid p-5 recommender" id="quote1">#}
+    {#            <div class="row">#}
+    {#                <div class="col-md-3 col-sm-12 col-xs-12 text-center">#}
+    {#                    <img class="img-fluid mx-auto d-block rounded-circle" src="{% static 'img/img.png' %}"#}
+    {#                         height="159px" width="159px">#}
+    {#                </div>#}
+    {#                <div class="col-md-9 col-sm-12 col-xs-12 p-5">#}
+    {#                    <blockquote>#}
+    {#                        <p>"I had a fantastic experience learning to build my own guitar at Lagan Lutherie School. The instructors were incredibly knowledgeable and helpful, and I'm so proud of the instrument I created."</p>#}
+    {#                        <cite>John Smith</cite>#}
+    {#                    </blockquote>#}
+    {##}
+    {#                </div>#}
+    {#            </div>#}
+    {##}
+    {#        </div>#}
+    {#    </section>#}
+
+    <!-- About Us Section -->
+    <section id="about-us">
+        <div class="container my-5">
+            <h2>About Lagan Lutherie School</h2>
+            <div class="row align-items-center">
+
+                <div class="col">
+
+                    <p>Lagan Lutherie School offers classes in guitar making for students at all levels from beginner to advanced.</p>
+                    <p>Classes are under the tuition of Sam Irwin, a Luthier with 40 years experience. Full time, part time, evening and weekend classes are available. All equipment and tools are provided with guidance at every step, and assistance where necessary.</p>
+                    <p>Be sure to check out details of our courses, our photos and videos of finished guitars and other instruments. Recently we have been joined by another master luthier who specialises in violins and archtops with the aim to offer courses in these disciplines. We’d be happy to hear from you if you’re interested.</p>
+                    <a href="#contact_us" class="btn btn-primary">Learn More</a>
+
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col my-5">
+                    <img src="{% static 'img/_DRW0764.jpg' %}" alt="About Lagan Lutherie School">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="courses">
+        <div class="container mt-5">
+            <h2 class="mb-5">Courses</h2>
+            <h4>Built around you!</h4>
+            <p class="text-justify mb-5"> Sessions are between 3 and 4 hours and are available on Tues-Sat.  Evening sessions are available Tuesday and Thursday. It takes approximately 100-150 hours to build a guitar, this varies based on the complexity and skill level.</p>
+
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card" style="background: #FBE3BF;">
+                        <div class="card-body">
+                            <h4 class="card-title">Pay-As-You-Go</h4>
+                            <p class="card-text">This is our most flexible option where you can work on your guitar building skills at your own pace. Sessions are between 3 and 4 hours and are available on Tues-Sat.</p>
+                            <p class="card-text"><strong>Estimated Completion Time:</strong> 25-38 weeks</p>
+                            <small>Based on 4 hours per week</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card" style="background: #CD9D6F;">
+                        <div class="card-body">
+                            <h4 class="card-title">Part-Time Course</h4>
+                            <p class="card-text">Join our part-time course and learn how to build your own guitar in a relaxed atmosphere. Sessions are between 3 and 4 hours and are available on Tues-Sat.</p>
+                            <p class="card-text"><strong>Estimated Completion Time:</strong> 8-13 weeks</p>
+                            <small>Based on 3 sessions of 4 hours per week</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card" style="background: #EDCAA1;">
+                        <div class="card-body">
+                            <h4 class="card-title">Full-Time Course</h4>
+                            <p class="card-text">Join our full-time course and learn how to build your own guitar in an intensive and immersive environment. Sessions are between 3 and 4 hours and are available on Tues-Sat.</p>
+                            <p class="card-text"><strong>Estimated Completion Time:</strong> 5-8 weeks</p>
+                            <small>Based on 5 sessions of 4 hours per week</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card" style="background: #FEEED5;">
+                        <div class="card-body">
+                            <h4 class="card-title">Evening Classes</h4>
+                            <p class="card-text">Join our evening classes and learn how to build your own guitar after work. Sessions are available on Tuesdays and Thursdays.</p>
+                            <p class="card-text"><strong>Estimated Completion Time:</strong> 17-25 weeks</p>
+                            <small>Based on 2 sessions of 3 hours per week</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card" style="background: #CD9D6F;">
+                        <div class="card-body">
+                            <h4 class="card-title">Focused Workshops</h4>
+                            <p class="card-text">Join our focused workshops and learn how to improve your guitar building skills. Workshops are available on various topics, including guitar set-up and fret-dressing.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section id="services">
+        <div class="container my-5">
+            <h1>Additional Services</h1>
+            <p> As well as expert tuition, our team of experienced luthiers are also available, contact us below for a free estimate.</p>
+            <div class="card-deck mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Guitar Set-up</h5>
+                        <p class="card-text">We offer professional guitar set-up services to ensure your instrument is optimized for playability and sound quality. Our skilled technicians can adjust your guitar's action, intonation, and more to your exact preferences.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Instrument Repair and Restoration</h5>
+                        <p class="card-text">Our experienced team can repair and restore a wide range of stringed instruments, including guitars, basses, violins, and more. From basic repairs to full restorations, we can help bring your instrument back to life.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Commissioned Instrument Building</h5>
+                        <p class="card-text">Looking for a custom-built instrument? Our skilled luthiers can work with you to design and build a one-of-a-kind instrument to your exact specifications. From tonewoods to hardware, we'll make sure your dream instrument becomes a reality.</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="gallery">
+
+        <h1>Take a look</h1>
+
+        <div class="mySlides">
+
+            <img src="{% static 'img/gallery/1.jpg' %}" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+
+            <img src="{% static 'img/gallery/2.jpg' %}" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+
+            <img src="{% static 'img/gallery/9.jpg' %}" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+
+            <img src="{% static 'img/gallery/8.jpg' %}" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+
+            <img src="{% static 'img/gallery/4.jpg' %}" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+
+            <img src="{% static 'img/gallery/DSC00100.jpg' %}" style="width:100%">
+        </div>
+
+
+
+
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="{% static 'img/gallery/1.jpg' %}" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="{% static 'img/gallery/2.jpg' %}" style="width:100%" onclick="currentSlide(2)" alt="The Woods">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="{% static 'img/gallery/9.jpg' %}" style="width:100%" onclick="currentSlide(3)" alt="The Woods">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="{% static 'img/gallery/8.jpg' %}" style="width:100%" onclick="currentSlide(4)" alt="The Woods">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="{% static 'img/gallery/4.jpg' %}" style="width:100%" onclick="currentSlide(5)" alt="The Woods">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="{% static 'img/gallery/DSC00100.jpg' %}" style="width:100%" onclick="currentSlide(6)" alt="The Woods">
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+    <section id="contact_us">
+        <div class="container my-5 ">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Contact Us</h3>
+                    <form method="post">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </form>
+                    {% if success_message %}
+                        <div class="alert alert-success mt-3" role="alert">
+                            {{ success_message }}
+                        </div>
+                    {% endif %}
+                </div>
+                <div class="col-md-6">
+                    <h3>Find Us</h3>
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <iframe width="100%" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=Lagan%20Lutherie%20School%20Limited%20Unit%203,%2018a%20Balloo%20Avenue,%20Balloo%20Industrial%20Estate,%20Bangor,%20County%20Down,%20Northern%20Ireland%20BT19%207QT&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                            <a href="https://www.pureblack.de"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("demo");
+            let captionText = document.getElementById("caption");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+    </script>
+
+{% endblock %}
