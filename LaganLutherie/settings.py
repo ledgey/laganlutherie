@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 import os
 from pathlib import Path
-
+import dj_database_url
 import django_heroku
 
 
@@ -133,6 +133,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Configure Django App for Heroku.
 django_heroku.settings(locals())
 
-import dj_database_url
+
 
 DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
+
